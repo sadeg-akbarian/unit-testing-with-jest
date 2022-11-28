@@ -165,13 +165,14 @@ Example 2
 ```js
 const meeting1 = { meetingName: "meeting 1", attendees: ["Mary", "Paul"] };
 const meeting2 = { meetingName: "meeting 2", attendees: ["Peter"] };
+const meeting3 = { meetingName: "meeting 3", attendees: ["Mary, Paul"] };
 const meetings = [meeting1, meeting2, meeting3];
 
 const requiredAttendees = ["Peter", "Paul"];
 
 const result = attendanceCheck(meetings, requiredAttendees);
 // [
-//  { attendee: "Peter", missedMeetings: ["meeting 1", "meeting 2"] },
+//  { attendee: "Peter", missedMeetings: ["meeting 1", "meeting 3"] },
 //  { attendee: "Paul", missedMeetings: ["meeting 2"]}
 // ]
 ```
