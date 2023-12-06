@@ -1,3 +1,5 @@
 export function positiveMultiply(a, b) {
-  // add your solution here
+  return [a, b, Math.abs(a * b)];
 }
+
+//  npm run test:coding-and-unit-tests -- -t "positiveMultiply"
